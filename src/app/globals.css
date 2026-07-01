@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-pink: #e91e8c;
+  --primary-cyan: #29c5f3;
+  --primary-purple: #ad3fc5;
+  --gradient-start: #ad3fc5;
+  --gradient-end: #29c5f3;
+}
+
+:root {
+  --font-family: var(--font-handwritten);
+  font-size: large;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 25%, #d946ef 50%, #06b6d4 100%);
+}
+
+.gradient-footer {
+  background: linear-gradient(135deg, #7c3aed 0%, #c026d3 50%, #ec4899 100%);
+}
+
+.gradient-cta {
+  background: linear-gradient(135deg, #06b6d4 0%, #c026d3 50%, #ec4899 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #e91e8c 0%, #c026d3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #e91e8c 0%, #c026d3 100%);
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #c026d3 0%, #e91e8c 100%);
+}
+
+/* Decorative circles */
+.circle-decoration {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.circle-purple {
+  background: linear-gradient(135deg, #a855f7 0%, #c084fc 100%);
+}
+
+.circle-cyan {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Card hover effects */
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Pill buttons */
+.pill-tag {
+  border: 2px solid #1f2937;
+  border-radius: 9999px;
+  padding: 0.25rem 1rem;
+  font-weight: 500;
+}
+
+/* Input styling */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #e91e8c;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}

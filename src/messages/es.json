@@ -1,0 +1,417 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "summary": "1. Revisión",
+      "shippingPayment": "2. Datos de Facturación"
+    },
+    "success": {
+      "title": "¡Pago Procesado de Forma Exitosa!",
+      "description": "Tu pago ha sido aceptado. El acceso a la configuración de tus catálogos digitales ya se encuentra en proceso de activación.",
+      "paymentReference": "Referencia de Pago:",
+      "paidAmount": "Monto Liquidado:",
+      "transactionStatus": "Estado del Pago:",
+      "approved": "APROBADO",
+      "backToCatalog": "Regresar a la Tienda"
+    },
+    "empty": {
+      "title": "El carrito de compras está vacío",
+      "description": "No se han detectado catálogos digitales asignados a tu sesión actual de compras.",
+      "goToStore": "Explorar Catálogo"
+    },
+    "order": {
+      "title": "Servicios solicitados",
+      "clear": "Vaciar Carrito"
+    },
+    "financial": {
+      "title": "Detalle de Costos",
+      "couponPlaceholder": "Ingresa un cupón",
+      "applyCoupon": "Aplicar",
+      "appliedCoupon": "Código {code} (-{discount}%)",
+      "remove": "Quitar",
+      "couponInvalid": "El código introducido no es válido o ya ha expirado.",
+      "subtotal": "Subtotal de Catálogos:",
+      "discount": "Descuento Directo:",
+      "netTotal": "Total Neto a Pagar:",
+      "tax": "IVA {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Avanzar al Pago",
+      "processing": "Validando transacción mediante Octano...",
+      "payAmount": "Pagar {amount}",
+      "backToCart": "Modificar pedido / Aplicar cupón"
+    },
+    "errors": {
+      "declined": "La transacción fue rechazada por el banco emisor.",
+      "connection": "Se presentó un problema de conexión con el procesador de pagos."
+    },
+    "metadata": {
+      "couponApplied": "Cupón de descuento activo",
+      "standardSale": "Transacción digital estándar"
+    },
+    "form": {
+      "buyerTitle": "Información del Cliente / Facturación",
+      "addressTitle": "Datos de Envío y Activación",
+      "paymentTitle": "Pasarela de Pago Encriptada",
+      "firstName": "Nombre(s) *",
+      "lastName": "Apellidos *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono Móvil (10 dígitos) *",
+      "company": "Razón Social / Empresa (Opcional)",
+      "streetAddress": "Dirección (Calle, No. Ext. e Int.) *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Colonia / Cruces (Opcional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Alcaldía o Municipio *",
+      "state": "Estado / Provincia *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "Código Postal *",
+      "country": "País",
+      "mexico": "México (MX)",
+      "cardNumber": "Número de Tarjeta (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Nombre impreso en la tarjeta *",
+      "cardHolderPlaceholder": "Tal como aparece en el plástico",
+      "expiryMonth": "Mes de Vence. (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Año de Vence. (AAAA) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Código de Verificación (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Pago protegido mediante cifrado seguro"
+    },
+    "images": {
+      "octanoAlt": "Octano",
+      "securePaymentAlt": "Pago seguro"
+    }
+  },
+  "purchaseEmail": {
+    "errors": {
+      "incompleteOrder": "Información de orden incompleta."
+    },
+    "fallbacks": {
+      "product": "Producto",
+      "productDescription": "Solución digital premium para catálogos."
+    },
+    "header": {
+      "title": "Compra confirmada",
+      "description": "Tu pedido de catálogos digitales ha sido procesado correctamente."
+    },
+    "product": {
+      "quantity": "Cantidad",
+      "total": "Total"
+    },
+    "customer": {
+      "order": "Orden",
+      "thanks": "Gracias por tu compra,",
+      "processing": "Tu pago ha sido verificado correctamente y tu orden ya está siendo procesada por nuestro equipo de activación.",
+      "totalPaid": "Total pagado",
+      "address": "Dirección asignada",
+      "zip": "CP"
+    },
+    "business": {
+      "newOrder": "Nueva orden ecommerce",
+      "processed": "procesados correctamente",
+      "customerInfo": "Información del cliente",
+      "name": "Nombre:",
+      "email": "Correo:",
+      "phone": "Teléfono:",
+      "notes": "Notas:",
+      "none": "Ninguna"
+    },
+    "subjects": {
+      "customer": "Confirmación de orden",
+      "business": "NUEVA ORDEN"
+    }
+  },
+  "contactEmail": {
+    "errors": {
+      "missingFields": "Faltan campos requeridos (nombre, email, mensaje)"
+    },
+    "header": {
+      "description": "Catálogos digitales de alto rendimiento, sistemas interactivos y soluciones de venta en línea de nivel empresarial."
+    },
+    "footer": {
+      "copy": "Byteza © 2026 — Herramientas digitales para negocios modernos.",
+      "contact": "Contacto:"
+    },
+    "internal": {
+      "badge": "NUEVA SOLICITUD DE CONTACTO",
+      "title": "Nueva consulta recibida desde el sitio web",
+      "clientName": "Nombre del cliente",
+      "emailAddress": "Correo electrónico",
+      "messageContent": "Contenido del mensaje"
+    },
+    "user": {
+      "greeting": "Hola,",
+      "line1": "Tu mensaje ha sido recibido correctamente.",
+      "line2": "Nuestro equipo de Byteza ya está revisando tu solicitud y te responderemos lo antes posible.",
+      "messageTitle": "Tu mensaje",
+      "button": "Visitar Byteza"
+    },
+    "subjects": {
+      "internal": "Nuevo mensaje del sitio web:",
+      "user": "Recibimos tu mensaje - Byteza"
+    }
+  },
+  "header": {
+    "logoAlt": "Logo",
+    "titleAlt": "Título",
+    "cart": "Carrito",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "nav": {
+      "home": "Inicio",
+      "solutions": "Soluciones",
+      "customPlan": "Plan Personalizado",
+      "payPlan": "Pagar Plan"
+    }
+  },
+  "hero": {
+    "title": "Haz que tus clientes",
+    "highlight": "compren más rápido.",
+    "description": "Convierte tus listas de productos en catálogos digitales modernos, rápidos y fáciles de compartir. Facilita el proceso de compra para tus clientes y vende de forma más profesional desde cualquier dispositivo.",
+    "ordersReady": "Pedidos listos"
+  },
+  "features": {
+    "badge": "¿Por qué un catálogo digital?",
+    "description": "Un catálogo desordenado, poco visual o difícil de compartir puede frenar decisiones, generar dudas y hacerte perder ventas frente a competidores que sí están mejor estructurados.",
+    "title": "Aquí es donde entramos nosotros.",
+    "subtitle": "Transformamos catálogos tradicionales en herramientas digitales estratégicas, diseñadas para que tus clientes:",
+    "items": {
+      "search": "Encuentren productos rápidamente",
+      "offer": "Comprendan tu oferta sin fricción",
+      "decisions": "Tomen decisiones más ágiles",
+      "contact": "Te contacten o hagan pedidos de forma inmediata"
+    }
+  },
+  "about": {
+    "badge": "Nuestra misión",
+    "title": "No se trata solo de",
+    "highlight": "verse bien.",
+    "description": "Se trata de vender mejor, con menos esfuerzo operativo.",
+    "optimized": "Catálogo optimizado",
+    "ready": "Listo para vender",
+    "items": {
+      "catalogs": "Catálogos claros y fáciles de navegar.",
+      "experience": "Una mejor experiencia para tus clientes."
+    }
+  },
+  "aboutCompany": {
+    "badge": "¿Quiénes Somos?",
+    "title": "Arquitectura comercial para negocios mayoristas",
+    "description1": "Somos un equipo especializado en el diseño y desarrollo de catálogos digitales estratégicos para empresas que operan en el segmento mayorista.",
+    "description2": "Nuestro enfoque no parte del diseño, parte del negocio.",
+    "subtitle": "Entendemos que en el mayoreo no basta con mostrar productos:",
+    "description3": "Es necesario estructurar la información, facilitar la decisión de compra y optimizar la forma en que los clientes interactúan con tu oferta.",
+    "description4": "Por eso, desarrollamos soluciones que convierten catálogos tradicionales en herramientas comerciales claras, funcionales y listas para generar resultados.",
+    "button": "Conoce nuestros Planes",
+    "card": {
+      "subtitle": "Arquitectura Comercial",
+      "title": "Para Mayoristas"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "¿Por qué elegirnos?",
+    "title": "Nuestro Enfoque",
+    "description": "Trabajamos bajo una lógica simple pero poderosa:",
+    "subtitle": "Cada catálogo que desarrollamos está pensado para:",
+    "tags": {
+      "order": "Orden",
+      "clarity": "Claridad",
+      "conversion": "Conversión"
+    },
+    "items": {
+      "friction": "Reducir fricción en el proceso de compra",
+      "decisions": "Acelerar la toma de decisiones del cliente",
+      "communication": "Facilitar la comunicación comercial",
+      "image": "Proyectar una imagen profesional sólida",
+      "integration": "Integrarse naturalmente en la operación diaria del negocio"
+    },
+    "card": {
+      "subtitle": "Estrategia Comercial",
+      "title": "Enfocada en resultados"
+    },
+    "bottom": {
+      "title": "No diseñamos piezas aisladas.",
+      "description": "Diseñamos herramientas que se utilizan, se comparten y generan impacto."
+    }
+  },
+  "customSolution": {
+    "badge": "Solución a tu medida",
+    "title": "Arquitectura Comercial Personalizada",
+    "description": "Diseñamos una solución completamente adaptada a tu operación, tipo de productos y forma de vender.",
+    "button": "Quiero solución personalizada",
+    "items": {
+      "catalog": "Adaptado a tu catálogo y operación.",
+      "sales": "Pensado para facilitar ventas."
+    },
+    "card": {
+      "subtitle": "Solución personalizada",
+      "title": "Lista para operar"
+    }
+  },
+  "methodology": {
+    "badge": "Metodología",
+    "title": "Metodología de trabajo",
+    "description": "Nuestro proceso está diseñado para garantizar claridad, eficiencia y resultados:",
+    "steps": {
+      "analysis": {
+        "title": "Análisis comercial",
+        "description": "Entendemos tu operación, tu tipo de cliente y tu forma de vender."
+      },
+      "structure": {
+        "title": "Estructuración estratégica",
+        "description": "Organizamos tu catálogo con lógica comercial, priorizando claridad y facilidad de uso."
+      },
+      "development": {
+        "title": "Desarrollo y optimización",
+        "description": "Diseñamos un catálogo funcional, visualmente sólido y enfocado en conversión."
+      },
+      "delivery": {
+        "title": "Entrega lista para operar",
+        "description": "Recibes una herramienta completamente lista para implementarse en tu negocio."
+      }
+    },
+    "bottom": {
+      "title": "Metodología de trabajo",
+      "description": "En <strong>Byteza</strong> estamos listos para ayudarte a dar vida a tus ideas. Ya sea que necesites soluciones personalizadas o asesoría para tu proyecto, nuestro equipo está disponible para brindarte atención rápida y profesional."
+    }
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "Hablemos de tu catálogo digital",
+    "description": "Estamos listos para ayudarte a desarrollar una solución clara, funcional y lista para operar.",
+    "address": {
+      "title": "Av. Homero 404, Piso 5",
+      "description": "Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, CP: 11560, CDMX"
+    }
+  },
+  "footer": {
+    "paymentsAlt": "Métodos de pago",
+    "copyright": "© 2026 Byteza. Todos los Derechos Reservados",
+    "contact": {
+      "title": "Contacto",
+      "address": "Av. Homero 404, Piso 5 Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, CP 11560 CDMX"
+    },
+    "catalog": {
+      "title": "Catálogo Digital",
+      "description": "En el entorno actual, vender al mayoreo ya no depende únicamente del precio o del producto, sino de qué tan fácil es para tu cliente entender, elegir y comprar."
+    },
+    "architecture": {
+      "title": "Arquitectura Comercial",
+      "description": "Somos un equipo especializado en el diseño y desarrollo de catálogos digitales estratégicos para empresas que operan en el segmento mayorista."
+    },
+    "links": {
+      "privacy": "Aviso de Privacidad",
+      "terms": "Términos y Condiciones",
+      "refunds": "Política de Reembolsos y Cancelaciones"
+    }
+  },
+  "contactForm": {
+    "badge": "Formulario de contacto",
+    "title": "Contáctanos",
+    "description": "Completa el formulario y te responderemos lo antes posible.",
+    "fields": {
+      "name": "Nombre",
+      "email": "Email",
+      "solution": "Solución",
+      "company": "Empresa",
+      "description": "Describe tu solicitud"
+    },
+    "placeholders": {
+      "name": "Tu nombre",
+      "email": "tu@email.com",
+      "solution": "¿Qué solución necesitas?",
+      "company": "Nombre de tu empresa",
+      "description": "Cuéntanos más sobre tu proyecto o necesidad"
+    },
+    "messages": {
+      "success": "¡Gracias por tu mensaje! Nos pondremos en contacto pronto.",
+      "error": "Ocurrió un error al enviar el formulario."
+    },
+    "button": {
+      "submit": "Quiero mi catálogo",
+      "loading": "Enviando..."
+    }
+  },
+  "solutionsPage": {
+    "hero": {
+      "badge": "Soluciones diseñadas para vender más",
+      "title": "Soluciones <span>Byteza</span>",
+      "description": "Catálogos digitales diseñados para facilitar la compra, profesionalizar tu operación y acelerar decisiones comerciales."
+    },
+    "pricing": {
+      "tax": "MXN + IVA",
+      "button": "Añadir al carrito"
+    },
+    "custom": {
+      "badge": "Solución personalizada",
+      "title": "Arquitectura Comercial Personalizada",
+      "description": "Diseñamos una solución completamente adaptada a tu operación, tipo de productos y forma de vender.",
+      "button": "Quiero solución personalizada"
+    }
+  },
+  "customArchitecturePage": {
+    "hero": {
+      "badge": "Arquitectura Comercial Personalizada",
+      "title": "Diseñamos una solución adaptada a tu negocio",
+      "description": "Creamos catálogos digitales estratégicos pensados para la forma en que operas, vendes y gestionas tus productos."
+    },
+    "benefits": {
+      "badge": "Solución personalizada",
+      "title": "Pensada para facilitar decisiones y acelerar ventas",
+      "description": "Analizamos tu operación para construir una herramienta clara, funcional y alineada a tus objetivos comerciales.",
+      "items": [
+        "Adaptado a tu catálogo y tipo de cliente.",
+        "Estructura comercial enfocada en conversión.",
+        "Optimización visual y experiencia de usuario.",
+        "Herramienta lista para operar."
+      ]
+    },
+    "card": {
+      "label": "Arquitectura personalizada",
+      "title": "Lista para implementarse"
+    },
+    "contact": {
+      "badge": "Contáctanos",
+      "title": "Hablemos de tu proyecto",
+      "description": "Completa el formulario y nuestro equipo te ayudará a desarrollar una solución personalizada para tu operación."
+    }
+  },
+  "customPaymentPage": {
+    "cartItem": "Orden personalizada",
+    "hero": {
+      "badge": "Pago personalizado",
+      "title": "Pagar Plan <highlight>Personalizado</highlight>",
+      "description": "Completa tu pago utilizando tu ID de cotización y el monto asignado."
+    },
+    "info": {
+      "title": "Información de Pago",
+      "description": "Ingresa los datos de tu cotización para agregar tu orden personalizada al carrito y continuar con el pago."
+    },
+    "securePayment": {
+      "title": "Pago seguro",
+      "description": "Tu información es procesada mediante conexión segura y cifrada."
+    },
+    "paymentMethods": {
+      "title": "Métodos de pago",
+      "description": "Compatible con tarjetas de crédito y débito.",
+      "imageAlt": "Métodos de pago"
+    },
+    "form": {
+      "quoteId": "ID de Cotización",
+      "quotePlaceholder": "Ej: COT-2026-001",
+      "amount": "Monto (MXN antes de IVA)"
+    },
+    "summary": {
+      "subtotal": "Subtotal",
+      "tax": "IVA (16%)",
+      "total": "Total"
+    },
+    "button": "Proceder al Pago",
+    "footer": "Pago seguro procesado con encriptación SSL"
+  }
+}

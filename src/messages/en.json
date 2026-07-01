@@ -1,0 +1,417 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Home",
+      "summary": "1. Details",
+      "shippingPayment": "2. Shipping and Payment Methods"
+    },
+    "success": {
+      "title": "Payment Processed Successfully!",
+      "description": "Your transaction has been approved. The configuration access for your digital catalogs is already being prepared for activation.",
+      "paymentReference": "Payment ID:",
+      "paidAmount": "Total Paid:",
+      "transactionStatus": "Transaction Status:",
+      "approved": "APPROVED",
+      "backToCatalog": "Back to Catalog"
+    },
+    "empty": {
+      "title": "Your shopping cart is empty",
+      "description": "We did not find any digital catalogs in your current shopping session.",
+      "goToStore": "Go to Catalog"
+    },
+    "order": {
+      "title": "Items in your order",
+      "clear": "Remove Catalogs"
+    },
+    "financial": {
+      "title": "Financial Breakdown",
+      "couponPlaceholder": "Discount coupon",
+      "applyCoupon": "Validate",
+      "appliedCoupon": "Code {code} (-{discount}%)",
+      "remove": "Remove",
+      "couponInvalid": "The promotional code is invalid or has expired.",
+      "subtotal": "Catalog Subtotal:",
+      "discount": "Discount Applied:",
+      "netTotal": "Total Amount to Pay:",
+      "tax": "VAT {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Continue to Payment",
+      "processing": "Verifying Funds through Octano...",
+      "payAmount": "Pay {amount}",
+      "backToCart": "Edit order / Add coupon"
+    },
+    "errors": {
+      "declined": "The transaction was rejected by the banking institution.",
+      "connection": "A communication failure with the payment platform was detected."
+    },
+    "metadata": {
+      "couponApplied": "Active promotional code",
+      "standardSale": "Standard digital purchase"
+    },
+    "form": {
+      "buyerTitle": "Billing / Customer Information",
+      "addressTitle": "Contact and Activation Data",
+      "paymentTitle": "Protected Payment Gateway",
+      "firstName": "First Name(s) *",
+      "lastName": "Last Name(s) *",
+      "email": "Email *",
+      "phone": "Cell Phone (10 digits) *",
+      "company": "Company / Organization Name (Optional)",
+      "streetAddress": "Street, Exterior No., and Interior No. *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Neighborhood / Intersections (Optional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Borough or City *",
+      "state": "State / Entity *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "ZIP / Postal Code *",
+      "country": "Country",
+      "mexico": "Mexico (MX)",
+      "cardNumber": "Card Digits (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Cardholder Full Name *",
+      "cardHolderPlaceholder": "As read on the plastic",
+      "expiryMonth": "Exp. Month (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Exp. Year (YYYY) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Security Code (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Securely protected transaction"
+    },
+    "images": {
+      "octanoAlt": "Octano",
+      "securePaymentAlt": "Secure transaction"
+    }
+  },
+  "purchaseEmail": {
+    "errors": {
+      "incompleteOrder": "Incomplete order information."
+    },
+    "fallbacks": {
+      "product": "Product",
+      "productDescription": "Premium digital catalog solution."
+    },
+    "header": {
+      "title": "Purchase confirmed",
+      "description": "Your digital catalog order has been successfully processed."
+    },
+    "product": {
+      "quantity": "Quantity",
+      "total": "Total"
+    },
+    "customer": {
+      "order": "Order",
+      "thanks": "Thanks for your purchase,",
+      "processing": "Your payment has been successfully verified and your order is now being processed by our activation team.",
+      "totalPaid": "Total paid",
+      "address": "Assigned address",
+      "zip": "ZIP"
+    },
+    "business": {
+      "newOrder": "New ecommerce order",
+      "processed": "processed successfully",
+      "customerInfo": "Customer information",
+      "name": "Name:",
+      "email": "Email:",
+      "phone": "Phone:",
+      "notes": "Notes:",
+      "none": "None"
+    },
+    "subjects": {
+      "customer": "Order confirmation",
+      "business": "NEW ORDER"
+    }
+  },
+  "contactEmail": {
+    "errors": {
+      "missingFields": "Required fields are missing (name, email, message)"
+    },
+    "header": {
+      "description": "High-performance digital catalogs, interactive sales systems, and enterprise-grade e-commerce solutions."
+    },
+    "footer": {
+      "copy": "Byteza © 2026 — Digital tools for modern businesses.",
+      "contact": "Contact:"
+    },
+    "internal": {
+      "badge": "NEW CONTACT REQUEST",
+      "title": "New website inquiry received",
+      "clientName": "Client Name",
+      "emailAddress": "Email Address",
+      "messageContent": "Message Content"
+    },
+    "user": {
+      "greeting": "Hello,",
+      "line1": "Your message has been successfully received.",
+      "line2": "Our Byteza team is already reviewing your request and we'll get back to you as soon as possible.",
+      "messageTitle": "Your Message",
+      "button": "Visit Byteza"
+    },
+    "subjects": {
+      "internal": "New Website Message:",
+      "user": "We received your message - Byteza"
+    }
+  },
+  "header": {
+    "logoAlt": "Logo",
+    "titleAlt": "Title",
+    "cart": "Cart",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "nav": {
+      "home": "Home",
+      "solutions": "Solutions",
+      "customPlan": "Custom Plan",
+      "payPlan": "Pay Plan"
+    }
+  },
+  "hero": {
+    "title": "Make your customers",
+    "highlight": "buy faster.",
+    "description": "Turn your product lists into modern, fast, and easy-to-share digital catalogs. Simplify the buying process for your customers and sell more professionally from any device.",
+    "ordersReady": "Orders ready"
+  },
+  "features": {
+    "badge": "Why a digital catalog?",
+    "description": "A messy, poorly visualized, or hard-to-share catalog can slow decisions, create doubts, and make you lose sales against competitors with better structured presentations.",
+    "title": "That’s where we come in.",
+    "subtitle": "We transform traditional catalogs into strategic digital tools designed so your customers can:",
+    "items": {
+      "search": "Find products quickly",
+      "offer": "Understand your offer without friction",
+      "decisions": "Make faster decisions",
+      "contact": "Contact you or place orders immediately"
+    }
+  },
+  "about": {
+    "badge": "Our mission",
+    "title": "It’s not just about",
+    "highlight": "looking good.",
+    "description": "It’s about selling better with less operational effort.",
+    "optimized": "Optimized catalog",
+    "ready": "Ready to sell",
+    "items": {
+      "catalogs": "Clear and easy-to-navigate catalogs.",
+      "experience": "A better experience for your customers."
+    }
+  },
+  "aboutCompany": {
+    "badge": "Who We Are",
+    "title": "Commercial architecture for wholesale businesses",
+    "description1": "We are a team specialized in designing and developing strategic digital catalogs for companies operating in the wholesale segment.",
+    "description2": "Our approach starts with the business, not with design.",
+    "subtitle": "We understand that in wholesale, it’s not enough to simply showcase products:",
+    "description3": "It is necessary to structure information, simplify purchasing decisions, and optimize how customers interact with your offer.",
+    "description4": "That’s why we develop solutions that transform traditional catalogs into clear, functional commercial tools ready to generate results.",
+    "button": "Discover our Plans",
+    "card": {
+      "subtitle": "Commercial Architecture",
+      "title": "For Wholesalers"
+    }
+  },
+  "whyChooseUs": {
+    "badge": "Why Choose Us?",
+    "title": "Our Approach",
+    "description": "We work under a simple yet powerful logic:",
+    "subtitle": "Every catalog we develop is designed to:",
+    "tags": {
+      "order": "Order",
+      "clarity": "Clarity",
+      "conversion": "Conversion"
+    },
+    "items": {
+      "friction": "Reduce friction in the purchasing process",
+      "decisions": "Speed up customer decision-making",
+      "communication": "Facilitate commercial communication",
+      "image": "Project a strong professional image",
+      "integration": "Integrate naturally into the daily business operation"
+    },
+    "card": {
+      "subtitle": "Commercial Strategy",
+      "title": "Focused on results"
+    },
+    "bottom": {
+      "title": "We don’t design isolated pieces.",
+      "description": "We design tools that are used, shared, and generate impact."
+    }
+  },
+  "customSolution": {
+    "badge": "Tailored Solution",
+    "title": "Custom Commercial Architecture",
+    "description": "We design a solution fully adapted to your operation, product type, and way of selling.",
+    "button": "I want a custom solution",
+    "items": {
+      "catalog": "Adapted to your catalog and operation.",
+      "sales": "Designed to simplify sales."
+    },
+    "card": {
+      "subtitle": "Custom solution",
+      "title": "Ready to operate"
+    }
+  },
+  "methodology": {
+    "badge": "Methodology",
+    "title": "Work methodology",
+    "description": "Our process is designed to ensure clarity, efficiency, and results:",
+    "steps": {
+      "analysis": {
+        "title": "Business analysis",
+        "description": "We understand your operation, your customer type, and your way of selling."
+      },
+      "structure": {
+        "title": "Strategic structuring",
+        "description": "We organize your catalog with commercial logic, prioritizing clarity and ease of use."
+      },
+      "development": {
+        "title": "Development and optimization",
+        "description": "We design a functional, visually solid catalog focused on conversion."
+      },
+      "delivery": {
+        "title": "Delivery ready to operate",
+        "description": "You receive a tool completely ready to be implemented in your business."
+      }
+    },
+    "bottom": {
+      "title": "Work methodology",
+      "description": "At <strong>Byteza</strong> we are ready to help bring your ideas to life. Whether you need custom solutions or guidance for your project, our team is available to provide fast and professional support."
+    }
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "Let’s talk about your digital catalog",
+    "description": "We are ready to help you develop a clear, functional solution ready to operate.",
+    "address": {
+      "title": "404 Homero Ave, Floor 5",
+      "description": "Polanco V Section, Miguel Hidalgo Borough, ZIP Code: 11560, Mexico City"
+    }
+  },
+  "footer": {
+    "paymentsAlt": "Payment methods",
+    "copyright": "© 2026 Byteza. All Rights Reserved",
+    "contact": {
+      "title": "Contact",
+      "address": "404 Homero Ave, Floor 5, Polanco V Section, Miguel Hidalgo Borough, ZIP Code 11560, Mexico City"
+    },
+    "catalog": {
+      "title": "Digital Catalog",
+      "description": "In today’s environment, wholesale selling no longer depends only on price or product quality, but on how easy it is for your customer to understand, choose, and buy."
+    },
+    "architecture": {
+      "title": "Commercial Architecture",
+      "description": "We are a team specialized in the design and development of strategic digital catalogs for companies operating in the wholesale segment."
+    },
+    "links": {
+      "privacy": "Privacy Notice",
+      "terms": "Terms and Conditions",
+      "refunds": "Refund and Cancellation Policy"
+    }
+  },
+  "contactForm": {
+    "badge": "Contact form",
+    "title": "Contact us",
+    "description": "Fill out the form and we will get back to you as soon as possible.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "solution": "Solution",
+      "company": "Company",
+      "description": "Describe your request"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "solution": "What solution do you need?",
+      "company": "Your company name",
+      "description": "Tell us more about your project or needs"
+    },
+    "messages": {
+      "success": "Thank you for your message! We will contact you soon.",
+      "error": "An error occurred while sending the form."
+    },
+    "button": {
+      "submit": "I want my catalog",
+      "loading": "Sending..."
+    }
+  },
+  "solutionsPage": {
+    "hero": {
+      "badge": "Solutions designed to sell more",
+      "title": "<span>Byteza</span> Solutions",
+      "description": "Digital catalogs designed to simplify purchasing, professionalize your operation, and accelerate business decisions."
+    },
+    "pricing": {
+      "tax": "MXN + VAT",
+      "button": "Add to cart"
+    },
+    "custom": {
+      "badge": "Custom solution",
+      "title": "Personalized Commercial Architecture",
+      "description": "We design a solution fully adapted to your operation, product type, and way of selling.",
+      "button": "I want a custom solution"
+    }
+  },
+  "customArchitecturePage": {
+    "hero": {
+      "badge": "Custom Commercial Architecture",
+      "title": "We design a solution tailored to your business",
+      "description": "We create strategic digital catalogs designed around the way you operate, sell, and manage your products."
+    },
+    "benefits": {
+      "badge": "Custom solution",
+      "title": "Built to simplify decisions and accelerate sales",
+      "description": "We analyze your operation to build a clear, functional tool aligned with your business goals.",
+      "items": [
+        "Adapted to your catalog and customer type.",
+        "Commercial structure focused on conversion.",
+        "Visual optimization and user experience.",
+        "A tool ready to operate."
+      ]
+    },
+    "card": {
+      "label": "Custom architecture",
+      "title": "Ready to implement"
+    },
+    "contact": {
+      "badge": "Contact us",
+      "title": "Let’s talk about your project",
+      "description": "Fill out the form and our team will help you develop a personalized solution for your operation."
+    }
+  },
+   "customPaymentPage": {
+    "cartItem": "Custom order",
+    "hero": {
+      "badge": "Custom payment",
+      "title": "Pay <highlight>Custom Plan</highlight>",
+      "description": "Complete your payment using your quote ID and assigned amount."
+    },
+    "info": {
+      "title": "Payment Information",
+      "description": "Enter your quote details to add your custom order to the cart and continue with payment."
+    },
+    "securePayment": {
+      "title": "Secure payment",
+      "description": "Your information is processed through a secure and encrypted connection."
+    },
+    "paymentMethods": {
+      "title": "Payment methods",
+      "description": "Compatible with credit and debit cards.",
+      "imageAlt": "Payment methods"
+    },
+    "form": {
+      "quoteId": "Quote ID",
+      "quotePlaceholder": "Ex: QUOTE-2026-001",
+      "amount": "Amount (MXN before VAT)"
+    },
+    "summary": {
+      "subtotal": "Subtotal",
+      "tax": "VAT (16%)",
+      "total": "Total"
+    },
+    "button": "Proceed to Payment",
+    "footer": "Secure payment processed with SSL encryption"
+  }
+}
