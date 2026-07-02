@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const LOGO_URL = "https://nexorithm.com.mx/title-dark.png";
+const LOGO_URL = "https://byteza.com.mx/logo.png";
 
 const BUSINESS_EMAIL = "ventas@byteza.com.mx";
 
@@ -381,23 +381,7 @@ export async function POST(req: Request) {
 
   <tr>
     <td style="padding:44px 28px 38px 28px; text-align:center">
-      <div
-        style="
-          width:88px;
-          height:88px;
-          margin:0 auto 22px auto;
-          border-radius:28px;
-          background:#f97316;
-          box-shadow:0 18px 40px rgba(249,115,22,0.22);
-          display:flex;
-          align-items:center;
-          justify-content:center;
-          font-size:34px;
-          color:#ffffff;
-        "
-      >
-        ⚡
-      </div>
+
 
       <div
         style="

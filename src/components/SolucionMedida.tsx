@@ -6,6 +6,8 @@ import {
   LayoutTemplate,
   Package,
 } from "lucide-react";
+import CardV1 from "./CardV1";
+import Image from "next/image";
 
 export default function SolucionMedida() {
   const t = useTranslations("customSolution");
@@ -67,58 +69,13 @@ export default function SolucionMedida() {
             </div>
 
             {/* Illustration */}
-            <div className="flex flex-1 justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 translate-y-6 scale-95 rounded-[40px] bg-orange-100 blur-2xl" />
-
-                <div className="relative rounded-[40px] border border-gray-200 bg-gray-50 p-8 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:rotate-1">
-                  <div className="rounded-3xl bg-white p-6 shadow-sm">
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <div className="h-5 w-40 rounded-full bg-gray-200"></div>
-                        <div className="mt-3 h-3 w-24 rounded-full bg-gray-100"></div>
-                      </div>
-
-                      <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-orange-100 text-orange-500">
-                        <Package size={34} />
-                      </div>
-                    </div>
-
-                    <div className="mt-8 space-y-4">
-                      {[1, 2, 3].map((item) => (
-                        <div
-                          key={item}
-                          className="flex items-center gap-4 rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:border-orange-200 hover:shadow-md"
-                        >
-                          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-500">
-                            <CheckCircle2 size={20} />
-                          </div>
-
-                          <div className="flex-1">
-                            <div className="h-4 w-32 rounded-full bg-gray-200"></div>
-                            <div className="mt-2 h-3 w-20 rounded-full bg-gray-100"></div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-
-                    <div className="mt-8 flex items-center justify-between rounded-3xl bg-orange-500 p-6 text-white">
-                      <div>
-                        <p className="text-sm opacity-90">
-                          {t("card.subtitle")}
-                        </p>
-
-                        <p className="mt-1 text-2xl">
-                          {t("card.title")}
-                        </p>
-                      </div>
-
-                      <ArrowRight size={32} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Image
+              src={"https://plus.unsplash.com/premium_photo-1661481717830-0d07445509cf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+              alt={""}
+              width={600}
+              height={800}
+              className="rounded-xl"
+            />
             {/* End Illustration */}
           </div>
         </div>

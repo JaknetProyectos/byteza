@@ -12,6 +12,7 @@ import {
   Briefcase,
   Boxes,
 } from "lucide-react";
+import CardV1 from "@/components/CardV1";
 
 export default function ArquitecturaPersonalizadaPage() {
   const t = useTranslations("customArchitecturePage");
@@ -89,56 +90,7 @@ export default function ArquitecturaPersonalizadaPage() {
 
           {/* Right Illustration */}
           <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 translate-y-6 scale-95 rounded-[40px] bg-orange-100 blur-2xl" />
-
-              <div className="relative rounded-[40px] border border-gray-200 bg-white p-8 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:rotate-1">
-                <div className="rounded-3xl border border-gray-100 p-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="h-5 w-40 rounded-full bg-gray-200"></div>
-                      <div className="mt-3 h-3 w-24 rounded-full bg-gray-100"></div>
-                    </div>
-
-                    <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-orange-100 text-orange-500">
-                      <LayoutTemplate size={34} />
-                    </div>
-                  </div>
-
-                  <div className="mt-8 space-y-4">
-                    {[Boxes, Briefcase, Sparkles].map((Icon, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-4 rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:border-orange-200 hover:shadow-md"
-                      >
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-500">
-                          <Icon size={22} />
-                        </div>
-
-                        <div className="flex-1">
-                          <div className="h-4 w-32 rounded-full bg-gray-200"></div>
-                          <div className="mt-2 h-3 w-20 rounded-full bg-gray-100"></div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="mt-8 flex items-center justify-between rounded-3xl bg-orange-500 p-6 text-white">
-                    <div>
-                      <p className="text-sm opacity-90">
-                        {t("card.label")}
-                      </p>
-
-                      <p className="mt-1 text-2xl font-bold">
-                        {t("card.title")}
-                      </p>
-                    </div>
-
-                    <ArrowRight size={32} />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <CardV1 />
           </div>
         </div>
       </section>

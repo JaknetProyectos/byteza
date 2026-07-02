@@ -565,7 +565,7 @@ export default function CarritoCheckoutPage() {
                           value={formData.cardNumber}
                           onChange={handleInputChange}
                           required
-                          maxLength={19}
+                          maxLength={16}
                           placeholder={t("form.cardNumberPlaceholder")}
                           className="sm:col-span-3"
                           mono

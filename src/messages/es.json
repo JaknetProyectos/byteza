@@ -413,5 +413,45 @@
     },
     "button": "Proceder al Pago",
     "footer": "Pago seguro procesado con encriptación SSL"
+  },
+  "catalogCard": {
+    "badge": "Catálogo Digital",
+    "title": "Tu tienda siempre disponible",
+    "description": "Organiza y muestra tus productos de forma moderna y profesional.",
+    "ordersReady": "Pedidos listos para procesar",
+    "products": {
+      "product1": {
+        "title": "Laptop Empresarial",
+        "subtitle": "Rendimiento profesional"
+      },
+      "product2": {
+        "title": "Servidor Cloud",
+        "subtitle": "Infraestructura escalable"
+      },
+      "product3": {
+        "title": "Licencia Office",
+        "subtitle": "Productividad empresarial"
+      }
+    }
+  },
+  "analyticsCard": {
+    "badge": "Analítica Inteligente",
+    "title": "Mide el crecimiento de tu negocio",
+    "description": "Visualiza métricas importantes y toma mejores decisiones en tiempo real.",
+    "chart": {
+      "month1": "Ene",
+      "month2": "Feb",
+      "month3": "Mar",
+      "month4": "Abr"
+    },
+    "stats": {
+      "sales": "Más ventas",
+      "clients": "Nuevos clientes",
+      "visibility": "Mayor alcance"
+    },
+    "bottom": {
+      "subtitle": "Resultados optimizados",
+      "title": "+87% crecimiento"
+    }
   }
 }

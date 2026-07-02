@@ -7,6 +7,9 @@ import {
   Layers3,
   Target,
 } from "lucide-react";
+import CardV1 from "./CardV1";
+import CardV2 from "./CardV2";
+import Image from "next/image";
 
 export default function PorQueElegirnos() {
   const t = useTranslations("whyChooseUs");
@@ -78,66 +81,13 @@ export default function PorQueElegirnos() {
         </div>
 
         {/* Illustration */}
-        <div className="flex flex-1 justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 translate-y-6 scale-95 rounded-[40px] bg-orange-100 blur-2xl" />
-
-            <div className="relative rounded-[40px] border border-gray-200 bg-white p-8 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:rotate-1">
-              <div className="rounded-3xl border border-gray-100 p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="h-5 w-40 rounded-full bg-gray-200"></div>
-                    <div className="mt-3 h-3 w-24 rounded-full bg-gray-100"></div>
-                  </div>
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-orange-100 text-orange-500">
-                    <BarChart3 size={34} />
-                  </div>
-                </div>
-
-                <div className="mt-8 space-y-5">
-                  <div className="rounded-2xl border border-gray-100 p-5">
-                    <div className="flex items-end gap-3 h-32">
-                      <div className="w-8 rounded-t-xl bg-orange-300 h-12"></div>
-                      <div className="w-8 rounded-t-xl bg-orange-400 h-20"></div>
-                      <div className="w-8 rounded-t-xl bg-orange-500 h-28"></div>
-                      <div className="w-8 rounded-t-xl bg-emerald-500 h-24"></div>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-4">
-                    {[1, 2, 3].map((item) => (
-                      <div
-                        key={item}
-                        className="rounded-2xl bg-gray-50 p-4 text-center"
-                      >
-                        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-500">
-                          <CheckCircle2 size={20} />
-                        </div>
-
-                        <div className="mt-4 h-3 rounded-full bg-gray-200"></div>
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center justify-between rounded-3xl bg-emerald-500 p-6 text-white">
-                    <div>
-                      <p className="text-sm opacity-90">
-                        {t("card.subtitle")}
-                      </p>
-
-                      <p className="mt-1 text-2xl">
-                        {t("card.title")}
-                      </p>
-                    </div>
-
-                    <ArrowRight size={32} />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Image
+          src={"https://plus.unsplash.com/premium_photo-1681487865280-c2b836dd83e8?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+          alt={""}
+          width={600}
+          height={800}
+          className="rounded-xl"
+        />
       </div>
 
       <div className="relative mx-auto mt-24 max-w-5xl rounded-[32px] border border-gray-200 bg-white px-10 py-12 text-center shadow-lg">

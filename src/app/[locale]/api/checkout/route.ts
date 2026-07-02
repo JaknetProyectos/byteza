@@ -4,7 +4,7 @@ import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const LOGO_URL = "https://byteforge.com.mx/logo.png";
+const LOGO_URL = "https://byteza.com.mx/logo.png";
 const BUSINESS_EMAIL = "ventas@byteza.com.mx";
 
 function formatCurrency(value: number, locale: string) {
@@ -70,15 +70,15 @@ export async function POST(req: Request) {
     items.forEach((item: any) => {
       const product = item.product || {};
       const qty = Number(item.quantity || 1);
-      const unitPrice = Number(product.price || 0);
+      const unitPrice = Number(item.price || 0);
       const total = unitPrice * qty;
 
       const productName = escapeHtml(
-        product.name || t("fallbacks.product")
+        item.name || t("fallbacks.product")
       );
 
       const productDescription = escapeHtml(
-        product.description || t("fallbacks.productDescription")
+        item.description || t("fallbacks.productDescription")
       );
 
       const productIcon = escapeHtml(String(product.icon || ""));
@@ -98,28 +98,6 @@ export async function POST(req: Request) {
             box-shadow:0 10px 24px rgba(249,115,22,0.05);
           "
         >
-          <tr>
-            <td
-              style="
-                padding:0;
-                background:#fffdf9;
-                border-bottom:1px solid #fde7c8;
-              "
-            >
-              <img
-                src="${productIcon}"
-                alt="${productName}"
-                width="100%"
-                height="220"
-                style="
-                  width:100%;
-                  height:220px;
-                  object-fit:cover;
-                  display:block;
-                "
-              />
-            </td>
-          </tr>
 
           <tr>
             <td style="padding:22px 22px 20px 22px">
@@ -371,23 +349,6 @@ export async function POST(req: Request) {
 
       <tr>
         <td style="padding:38px 28px 34px 28px">
-          <div
-            style="
-              display:inline-block;
-              padding:8px 14px;
-              border-radius:999px;
-              background:#fff7ed;
-              color:#f97316;
-              font-size:11px;
-              font-weight:800;
-              text-transform:uppercase;
-              letter-spacing:0.08em;
-              margin-bottom:18px;
-            "
-          >
-            ${t("customer.order")} #${safeOrderId}
-          </div>
-
           <h2
             style="
               margin:0 0 12px 0;

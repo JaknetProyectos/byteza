@@ -381,7 +381,7 @@
       "description": "Fill out the form and our team will help you develop a personalized solution for your operation."
     }
   },
-   "customPaymentPage": {
+  "customPaymentPage": {
     "cartItem": "Custom order",
     "hero": {
       "badge": "Custom payment",
@@ -413,5 +413,45 @@
     },
     "button": "Proceed to Payment",
     "footer": "Secure payment processed with SSL encryption"
+  },
+  "catalogCard": {
+    "badge": "Digital Catalog",
+    "title": "Your store always available",
+    "description": "Organize and showcase your products in a modern and professional way.",
+    "ordersReady": "Orders ready to process",
+    "products": {
+      "product1": {
+        "title": "Business Laptop",
+        "subtitle": "Professional performance"
+      },
+      "product2": {
+        "title": "Cloud Server",
+        "subtitle": "Scalable infrastructure"
+      },
+      "product3": {
+        "title": "Office License",
+        "subtitle": "Business productivity"
+      }
+    }
+  },
+   "analyticsCard": {
+    "badge": "Smart Analytics",
+    "title": "Measure your business growth",
+    "description": "Track key metrics and make better decisions in real time.",
+    "chart": {
+      "month1": "Jan",
+      "month2": "Feb",
+      "month3": "Mar",
+      "month4": "Apr"
+    },
+    "stats": {
+      "sales": "More sales",
+      "clients": "New clients",
+      "visibility": "Greater reach"
+    },
+    "bottom": {
+      "subtitle": "Optimized results",
+      "title": "+87% growth"
+    }
   }
 }

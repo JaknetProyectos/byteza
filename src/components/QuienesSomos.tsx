@@ -6,6 +6,7 @@ import {
   LayoutDashboard,
   Package,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function QuienesSomos() {
   const t = useTranslations("aboutCompany");
@@ -19,58 +20,13 @@ export default function QuienesSomos() {
       <div className="relative mx-auto flex max-w-7xl flex-col gap-20 lg:flex-row items-center">
         {/* Illustration */}
         <div className="flex flex-1 justify-center">
-          <div className="relative">
-            <div className="absolute inset-0 translate-y-6 scale-95 rounded-[40px] bg-emerald-100 blur-2xl" />
-
-            <div className="relative rounded-[40px] border border-gray-200 bg-white p-8 shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:-rotate-1">
-              <div className="rounded-3xl border border-gray-100 p-6">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="h-5 w-40 rounded-full bg-gray-200"></div>
-                    <div className="mt-3 h-3 w-24 rounded-full bg-gray-100"></div>
-                  </div>
-
-                  <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-orange-100 text-orange-500">
-                    <LayoutDashboard size={34} />
-                  </div>
-                </div>
-
-                <div className="mt-8 grid gap-4">
-                  {[Package, Briefcase, LayoutDashboard].map(
-                    (Icon, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center gap-4 rounded-2xl border border-gray-100 p-4 transition-all duration-300 hover:border-orange-200 hover:shadow-md"
-                      >
-                        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-500">
-                          <Icon size={22} />
-                        </div>
-
-                        <div className="flex-1">
-                          <div className="h-4 w-32 rounded-full bg-gray-200"></div>
-                          <div className="mt-2 h-3 w-20 rounded-full bg-gray-100"></div>
-                        </div>
-                      </div>
-                    )
-                  )}
-                </div>
-
-                <div className="mt-8 rounded-3xl bg-orange-500 p-6 text-white flex items-center justify-between">
-                  <div>
-                    <div className="text-sm opacity-90">
-                      {t("card.subtitle")}
-                    </div>
-
-                    <div className="mt-1 text-2xl">
-                      {t("card.title")}
-                    </div>
-                  </div>
-
-                  <Briefcase size={34} />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Image
+            src={"https://plus.unsplash.com/premium_photo-1683133556035-403d392ef900?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+            alt={""}
+            width={600}
+            height={800}
+            className="rounded-xl"
+          />
         </div>
 
         {/* Content */}

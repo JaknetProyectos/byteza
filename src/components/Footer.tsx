@@ -98,28 +98,22 @@ export default function Footer() {
 
             {/* Logo */}
             <div className="mt-10 flex items-center gap-4">
-              <div className="flex h-16 w-16 items-center justify-center rounded-3xl bg-white shadow-lg">
-                <svg
-                  className="h-10 w-10"
-                  viewBox="0 0 50 50"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="50" height="50" rx="10" fill="#f97316" />
-                  <path
-                    d="M15 15h12c5.523 0 10 4.477 10 10s-4.477 10-10 10H15V15z"
-                    fill="white"
-                  />
-                  <circle cx="30" cy="35" r="5" fill="#22c55e" />
-                  <circle cx="20" cy="35" r="5" fill="#fdba74" />
-                  <circle cx="25" cy="28" r="5" fill="#16a34a" />
-                </svg>
-              </div>
+              <div className="flex p-5 items-center justify-center rounded-3xl bg-white shadow-lg">
+                <Image
+                  src={"/logo.png"}
+                  alt={""}
+                  width={80}
+                  height={80}
+                  className="rounded-xl"
+                />
 
-              <div>
-                <span className="text-3xl text-white">
-                  Byteza
-                </span>
+                <Image
+                  src={"/title.png"}
+                  alt={""}
+                  width={180}
+                  height={80}
+                  className="rounded-xl"
+                />
               </div>
             </div>
           </div>
