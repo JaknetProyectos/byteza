@@ -139,9 +139,9 @@ export default function Footer() {
             {t("copyright")}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
+          <div className="grid items-center  lg:grid-cols-3 justify-center gap-6 text-sm">
             <Link
-              href="#"
+              href="/legal/privacidad"
               className="flex items-center gap-2 text-white/80 transition-colors hover:text-white"
             >
               <ShieldCheck size={16} />
@@ -149,7 +149,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="#"
+              href="/legal/terminos"
               className="flex items-center gap-2 text-white/80 transition-colors hover:text-white"
             >
               <ScrollText size={16} />
@@ -157,7 +157,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="#"
+              href="/legal/reembolsos"
               className="flex items-center gap-2 text-white/80 transition-colors hover:text-white"
             >
               <ReceiptText size={16} />
