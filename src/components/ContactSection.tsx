@@ -51,7 +51,7 @@ export default function ContactSection() {
             </a>
 
             <a
-              href="tel:+525552445687"
+              href="tel:+5215597172929"
               className="group flex items-center gap-5 rounded-3xl border border-gray-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-500 transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-white">
@@ -59,7 +59,7 @@ export default function ContactSection() {
               </div>
 
               <span className="text-lg text-gray-800">
-                +52 1 55 5244 5687
+                +52 1 55 9717 2929
               </span>
             </a>
 

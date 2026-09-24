@@ -30,7 +30,7 @@ export default function Footer() {
 
             <div className="space-y-5">
               <a
-                href="tel:+525552445687"
+                href="tel:+5215597172929"
                 className="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:bg-white/10"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-orange-500">
@@ -38,7 +38,7 @@ export default function Footer() {
                 </div>
 
                 <span className="text-white/90 transition-colors group-hover:text-white">
-                  +52 1 55 5244 5687
+                  +52 1 55 9717 2929
                 </span>
               </a>
 

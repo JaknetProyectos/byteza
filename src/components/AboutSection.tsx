@@ -53,11 +53,11 @@ export default function AboutSection() {
 
           <div className="mt-12 flex flex-col sm:flex-row gap-4">
             <a
-              href="tel:+525552445687"
+              href="tel:+5215597172929"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-orange-500 px-7 py-4 text-white font-semibold shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 hover:shadow-xl active:scale-95"
             >
               <Phone size={20} />
-              +52 1 55 5244 5687
+              +52 1 55 9717 2929
             </a>
           </div>
         </div>
