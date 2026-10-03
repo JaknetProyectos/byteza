@@ -600,7 +600,7 @@ export default function CarritoCheckoutPage() {
                           value={formData.cardYear}
                           onChange={handleInputChange}
                           required
-                          maxLength={4}
+                          maxLength={2}
                           placeholder={t("form.expiryYearPlaceholder")}
                           mono
                           inputClassName="text-center"
