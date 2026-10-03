@@ -25,7 +25,7 @@ import { useCart } from "@/context/CartContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-import { processOctanoPayment } from "@/lib/payment";
+import { PaymentData, processOctanoPayment } from "@/lib/payment";
 import { formatPrice } from "@/lib/price";
 
 type Step = 1 | 2 | 3;
@@ -104,9 +104,8 @@ function Field({
         onChange={onChange}
         placeholder={placeholder}
         maxLength={maxLength}
-        className={`w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-orange-400 focus:bg-white focus:ring-4 focus:ring-orange-100 ${
-          mono ? "font-mono" : ""
-        } ${inputClassName}`}
+        className={`w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-900 outline-none transition-all duration-300 placeholder:text-gray-400 focus:border-orange-400 focus:bg-white focus:ring-4 focus:ring-orange-100 ${mono ? "font-mono" : ""
+          } ${inputClassName}`}
       />
     </div>
   );
@@ -159,10 +158,13 @@ export default function CarritoCheckoutPage() {
     setErrorMessage("");
 
     const uniqueOrderId = `MC-${Date.now()}`;
+    const confirmationRedirectUrl = `${window.location.origin}/confirmacion?reference=${uniqueOrderId}&state=APPROVED`;
 
-    const paymentPayload = {
+    const paymentPayload: PaymentData = {
       amount: Number(grandTotal.toFixed(2)),
       orderId: uniqueOrderId,
+      redirectUrl: confirmationRedirectUrl,
+
       cardData: {
         number: formData.cardNumber.replace(/\s/g, ""),
         name: formData.cardName.trim(),
@@ -189,18 +191,19 @@ export default function CarritoCheckoutPage() {
     };
 
     try {
+      // Intentar pago
       const response = await processOctanoPayment(paymentPayload);
+      console.log(response)
 
+      // Redirección y autenticación
+      if (response.needsRedirect && response.redirectUrl) {
+        window.location.href = response.redirectUrl;
+        return;
+      }
+
+      // Envío de email y redirección a confirmación
       if (response.success) {
         setSuccessData(response.data);
-
-        console.log({
-          orderId: uniqueOrderId,
-          amount: paymentPayload.amount,
-          customer: paymentPayload.customer,
-          items,
-          metadata: paymentPayload.metadata,
-        });
 
         try {
           await fetch(`/${locale ?? "es"}/api/checkout`, {
@@ -219,6 +222,9 @@ export default function CarritoCheckoutPage() {
         }
 
         clearCart();
+        const successUrl = `/confirmacion?status=${response.status}&reference=${response.reference}&transactionId=${response.data?.transactionId || response.orderId}&amount=${paymentPayload.amount}`;
+        window.location.href = successUrl;
+
         setStep(3);
       } else {
         setErrorMessage(response.error || t("errors.declined"));
@@ -316,19 +322,16 @@ export default function CarritoCheckoutPage() {
 
           <div className="flex items-center gap-3">
             <div
-              className={`h-3 w-3 rounded-full ${
-                step >= 1 ? "bg-orange-500" : "bg-gray-200"
-              }`}
+              className={`h-3 w-3 rounded-full ${step >= 1 ? "bg-orange-500" : "bg-gray-200"
+                }`}
             />
             <div
-              className={`h-1 w-12 rounded-full ${
-                step >= 2 ? "bg-emerald-500" : "bg-gray-200"
-              }`}
+              className={`h-1 w-12 rounded-full ${step >= 2 ? "bg-emerald-500" : "bg-gray-200"
+                }`}
             />
             <div
-              className={`h-3 w-3 rounded-full ${
-                step >= 2 ? "bg-emerald-500" : "bg-gray-200"
-              }`}
+              className={`h-3 w-3 rounded-full ${step >= 2 ? "bg-emerald-500" : "bg-gray-200"
+                }`}
             />
           </div>
         </div>
@@ -671,17 +674,16 @@ export default function CarritoCheckoutPage() {
                         type="submit"
                         form="octano-payment-form"
                         disabled={isProcessing}
-                        className={`flex w-full items-center justify-center gap-2 rounded-full py-5 text-sm font-bold tracking-[0.18em] text-white transition-all duration-300 ${
-                          isProcessing
-                            ? "cursor-wait bg-gray-400"
-                            : "bg-emerald-500 hover:-translate-y-1 hover:bg-emerald-600 hover:shadow-lg"
-                        }`}
+                        className={`flex w-full items-center justify-center gap-2 rounded-full py-5 text-sm font-bold tracking-[0.18em] text-white transition-all duration-300 ${isProcessing
+                          ? "cursor-wait bg-gray-400"
+                          : "bg-emerald-500 hover:-translate-y-1 hover:bg-emerald-600 hover:shadow-lg"
+                          }`}
                       >
                         {isProcessing
                           ? t("actions.processing")
                           : t("actions.payAmount", {
-                              amount: formatPrice(grandTotal, "MXN", true),
-                            })}
+                            amount: formatPrice(grandTotal, "MXN", true),
+                          })}
                       </button>
 
                       <button

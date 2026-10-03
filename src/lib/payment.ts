@@ -2,9 +2,11 @@
 
 import axios from "axios";
 
-interface PaymentData {
+export interface PaymentData {
   amount: number;
   orderId: string;
+  currency?: string;
+  redirectUrl?: string;
 
   cardData: {
     number: string;
@@ -87,6 +89,10 @@ export async function processOctanoPayment(
       config
     );
 
+    // Moneda
+    const currency = (payment.currency || "MXN").toUpperCase();
+    const currencyCode = currency === "USD" ? "840" : "484";
+
     const cardToken =
       tokenResponse.data?.cardNumberToken;
 
@@ -99,6 +105,7 @@ export async function processOctanoPayment(
     // Customer Info
     const customerFirstName = payment.customer.nombre?.trim() || "N/A";
     const customerLastName = payment.customer.apellido?.trim() || "N/A";
+
 
     // Sale Request
     const salePayload = {
@@ -127,16 +134,23 @@ export async function processOctanoPayment(
       },
     };
 
-    const saleResponse = await axios.post(
-      `${OCTANO_BASE_URL}/sale`,
-      salePayload,
-      config
-    );
+    const { data } = await axios.post(`${OCTANO_BASE_URL}/sale`, salePayload, {
+      headers: { Authorization: `Bearer ${authToken}` }
+    });
+
+    const isApproved = data.status === "APPROVED";
+    const needsRedirect = data.redirectTo != "";
 
     return {
-      success: saleResponse.data.status == "APPROVED",
-      data: saleResponse.data,
+      success: isApproved,
+      needsRedirect,
+      redirectUrl: data.redirectTo || null,
+      orderId: data.orderId || data.reference,
+      reference: data.reference,
+      status: data.status,
+      data: data
     };
+
   } catch (error: any) {
     const errorDetail =
       error?.response?.data ||
